@@ -2,7 +2,7 @@ import Button from './Button'
 import key from '../assets/images/key.png';
 import login from '../assets/images/login.jpg';
 
-const LoginForm = () => {
+const Login = () => {
     return (
         <div>
             <div className="row">
@@ -42,4 +42,4 @@ const LoginForm = () => {
     )
 }
 
-export default LoginForm
+export default Login
