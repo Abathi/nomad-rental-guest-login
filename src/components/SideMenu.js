@@ -1,5 +1,5 @@
 import Button from '../components/Button'
-import user from '../assets/images/user.jpg';
+import user from '../assets/images/user.png';
 import faq from '../assets/images/faq.png';
 import contact from '../assets/images/contact.png';
 import account from '../assets/images/account.png';
