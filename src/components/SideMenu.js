@@ -43,7 +43,11 @@ const SideMenu = () => {
               <div className="col-1 px-0">
                 <img src={booking} alt="" className="w-100 mr-2"></img>
               </div>
-              <div className="col-11">Booking</div>
+              <div className="col-11">
+                <a href="./booking" style={{ color: "white" }}>
+                  Booking
+                </a>
+              </div>
             </div>
           </div>
           <div className="side-menu-options p-2 mb-2">
@@ -90,7 +94,11 @@ const SideMenu = () => {
               <div className="col-1 px-0">
                 <img src={toggle} alt="" className="w-100 mr-2"></img>
               </div>
-              <div className="col-11">Sign out</div>
+              <div className="col-11">
+                <a href="./" style={{ color: "#95989A" }}>
+                  Sign out
+                </a>
+              </div>
             </div>
           </div>
         </div>

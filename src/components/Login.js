@@ -59,7 +59,7 @@ const Login = () => {
             ></div>
             <div style={{ textAlign: "center" }}>
               <span>Don't have an account?</span>
-              <a href="./" className="small-title color-2">
+              <a href="./account" className="small-title color-2">
                 Sign up now
               </a>
             </div>
