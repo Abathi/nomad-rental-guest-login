@@ -58,7 +58,7 @@ const Account = () => {
                   </div>
                   <div className="form-group col-md-6">
                     <select id="country" className="form-control">
-                      <option selected>Thailand</option>
+                      <option defaultValue>Thailand</option>
                       <option>...</option>
                     </select>
                   </div>
