@@ -1,3 +1,8 @@
+.container-fluid {
+    padding-right: 80px !important;
+    padding-left: 80px !important;
+}
+
 .line {
     border-top: 1px solid #EEEEEE;
     margin-top: 10px;
@@ -6,4 +11,11 @@
 .blue-link {
     color: #168EEA;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        padding-right: 0 10px !important;
+        padding-left: 0 10px !important;
+    }
 }
