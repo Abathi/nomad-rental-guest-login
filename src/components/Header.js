@@ -9,10 +9,10 @@ const Header = () => {
     const resp = await axios.get(`https://restcountries.eu/rest/v2/all`);
     setCountries(resp.data);
   }, []);
-  var lis = [];
+  var country = [];
 
   for (var i = 0; i < countries.length; i++) {
-    lis.push(
+    country.push(
       <a href="./" className="dropdown-item" key={i}>
         {countries[i].name}
       </a>
@@ -41,7 +41,7 @@ const Header = () => {
                 </span>
               </button>
               <div className="dropdown-menu" aria-labelledby="city">
-                {lis}
+                {country}
               </div>
             </div>
           </div>
