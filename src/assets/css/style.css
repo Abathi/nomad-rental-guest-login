@@ -13,11 +13,6 @@
   margin-top: 10px;
 }
 
-.blue-link {
-  color: #168eea;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
   .container-fluid {
     padding-right: 10px !important;
@@ -64,9 +59,26 @@
   color: #fff;
 }
 
+.card {
+  border: unset;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  width: 80%;
+}
+
+.form-control {
+  border: unset;
+  background-color: #fff;
+}
+
 @media (min-width: 768px) {
   #sideMenuExpand,
   .side-menu-options {
     display: block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
   }
 }
