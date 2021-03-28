@@ -85,12 +85,12 @@ const Account = () => {
                       Username
                     </label>
                     <div className="input-group mb-2 row">
-                      <div class="form-group col-md-4 pr-0">
-                        <select id="inputState" class="form-control">
+                      <div className="form-group col-md-4 pr-0">
+                        <select id="inputState" className="form-control">
                           {code}
                         </select>
                       </div>
-                      <div class="form-group col-md-8 pl-0">
+                      <div className="form-group col-md-8 pl-0">
                         <input
                           type="text"
                           className="form-control"
