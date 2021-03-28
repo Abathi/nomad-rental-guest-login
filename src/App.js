@@ -1,12 +1,16 @@
-import Header from './components/Header'
-import LoginForm from './components/LoginForm'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Login from './components/Login'
+import Booking from './components/Booking'
+
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <LoginForm />
-    </div>
+    <Router>
+      <div className="container">
+        <Login />
+        <Route path='/booking' component={Booking} />
+      </div>
+    </Router>
   );
 }
 
