@@ -1,14 +1,11 @@
 import Header from './components/Header'
-import Button from './components/Button'
+import LoginForm from './components/LoginForm'
 
 function App() {
   return (
     <div className="container">
       <Header />
-      <Button
-        classes={'btn btn-primary w-100'}
-        text={'Sign in'}
-      />
+      <LoginForm />
     </div>
   );
 }
