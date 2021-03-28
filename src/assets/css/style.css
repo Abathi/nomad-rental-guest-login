@@ -36,16 +36,31 @@
   transform: translate(-50%, -50%);
 }
 
+.side-menu-options {
+  cursor: pointer;
+}
+
 .side-menu-options div {
   color: #303030;
 }
 
-.side-menu-options.active {
+.side-menu-options.active,
+.side-menu-options:hover.active {
   background-color: #7c60ff;
   border-radius: 5px;
 }
 
-.side-menu-options.active div {
+.side-menu-options:hover {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.side-menu-options:hover div {
+  color: #303030;
+}
+
+.side-menu-options.active div,
+.side-menu-options:hover.active div {
   color: #fff;
 }
 

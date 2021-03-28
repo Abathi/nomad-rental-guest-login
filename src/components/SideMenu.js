@@ -84,7 +84,8 @@ const SideMenu = () => {
               <div className="col-11">FAQ</div>
             </div>
           </div>
-          <div className="side-menu-options p-2 pt-5 mt-t">
+          <div className="my-md-4"></div>
+          <div className="side-menu-options p-2 mt-t">
             <div className="row mx-0">
               <div className="col-1 px-0">
                 <img src={toggle} alt="" className="w-100 mr-2"></img>
