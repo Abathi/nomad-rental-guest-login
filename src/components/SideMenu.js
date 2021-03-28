@@ -8,10 +8,19 @@ import toggle from '../assets/images/toggle.png';
 
 const SideMenu = () => {
     return (
-        <div>
-            <img src={user} alt=""></img>
-            <div>John Doe</div>
-            <div>Premium Nomad</div>
+        <div className="col-12 col-md-3 px-0 px-md-2">
+            <div className="row mx-0 mb-3">
+                <div className="col-4 col-md-3 px-0 profile-img position-relative">
+                    <img src={user} alt="" className="w-100"></img>
+                    <span className="position-absolute small-title text-white">
+                        JD
+                    </span>
+                </div>
+            </div>
+            <div className="main-title mb-1">John Doe</div>
+            <div className="sec-title" style={{ opacity: '0.7' }}>
+                Premium Nomad
+                </div>
             <Button
                 style={{ color: '#168EEA' }}
                 classes={'btn btn-primary w-100'}

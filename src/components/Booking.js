@@ -12,7 +12,7 @@ const Booking = () => {
     return (
         <div>
             <Header />
-            <div className="row">
+            <div className="container row">
                 <div className="col-3"><SideMenu /></div>
                 <div className="col-9">
                     <h2>Bookings</h2>
