@@ -12,6 +12,7 @@ const Account = () => {
     setCountries(resp.data);
   }, []);
   var country = [];
+  var code = [];
 
   for (var i = 0; i < countries.length; i++) {
     country.push(
@@ -19,8 +20,8 @@ const Account = () => {
         {countries[i].name}
       </option>
     );
+    code.push(<option key={i}>{countries[i].callingCodes[0]}</option>);
   }
-
   return (
     <div>
       <div className="header-block"></div>
@@ -83,16 +84,20 @@ const Account = () => {
                     <label className="sr-only" htmlFor="mobile">
                       Username
                     </label>
-                    <div className="input-group mb-2">
-                      <div className="input-group-prepend">
-                        <div className="input-group-text">+66</div>
+                    <div className="input-group mb-2 row">
+                      <div class="form-group col-md-4 pr-0">
+                        <select id="inputState" class="form-control">
+                          {code}
+                        </select>
                       </div>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="mobile"
-                        placeholder="(0) 053 555 555"
-                      />
+                      <div class="form-group col-md-8 pl-0">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="mobile"
+                          placeholder="(0) 053 555 555"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div
