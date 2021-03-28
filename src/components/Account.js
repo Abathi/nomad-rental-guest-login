@@ -1,8 +1,26 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import SideMenu from "../components/SideMenu";
 import Header from "../components/Header";
 import userEdit from "../assets/images/userEdit.png";
 
 const Account = () => {
+  const [countries, setCountries] = useState({ all: [] });
+
+  useEffect(async () => {
+    const resp = await axios.get(`https://restcountries.eu/rest/v2/all`);
+    setCountries(resp.data);
+  }, []);
+  var country = [];
+
+  for (var i = 0; i < countries.length; i++) {
+    country.push(
+      <option defaultValue key={i}>
+        {countries[i].name}
+      </option>
+    );
+  }
+
   return (
     <div>
       <div className="header-block"></div>
@@ -58,8 +76,9 @@ const Account = () => {
                   </div>
                   <div className="form-group col-md-6">
                     <select id="country" className="form-control">
-                      <option defaultValue>Thailand</option>
-                      <option>...</option>
+                      {/* <option defaultValue>Thailand</option>
+                      <option>...</option> */}
+                      {country}
                     </select>
                   </div>
                   <div className="form-group col-md-6">
