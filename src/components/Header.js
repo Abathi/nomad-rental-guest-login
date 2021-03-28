@@ -1,6 +1,23 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
+  const [countries, setCountries] = useState({ all: [] });
+
+  useEffect(async () => {
+    const resp = await axios.get(`https://restcountries.eu/rest/v2/all`);
+    setCountries(resp.data);
+  }, []);
+  var lis = [];
+
+  for (var i = 0; i < countries.length; i++) {
+    lis.push(
+      <a href="./" className="dropdown-item" key={i}>
+        {countries[i].name}
+      </a>
+    );
+  }
   return (
     <header className="bg-gray fixed-top">
       <div className="container-fluid py-2">
@@ -24,15 +41,7 @@ const Header = () => {
                 </span>
               </button>
               <div className="dropdown-menu" aria-labelledby="city">
-                <a className="dropdown-item" href="">
-                  Malaysia
-                </a>
-                <a className="dropdown-item" href="">
-                  China
-                </a>
-                <a className="dropdown-item" href="">
-                  Singapore
-                </a>
+                {lis}
               </div>
             </div>
           </div>

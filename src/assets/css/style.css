@@ -8,6 +8,14 @@
   height: 70px;
 }
 
+.dropdown-menu {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.dropdown-item {
+  font-size: 10px;
+}
+
 @media (max-width: 768px) {
   .container-fluid {
     padding-right: 10px !important;
