@@ -11,6 +11,7 @@ import send from "../assets/images/send.png";
 const Booking = () => {
   return (
     <div>
+      <div className="header-block"></div>
       <Header />
       <div className="container-fluid py3 py-md-5">
         <div className="row mx-0">

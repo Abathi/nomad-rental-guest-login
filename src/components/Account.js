@@ -5,6 +5,7 @@ import userEdit from "../assets/images/userEdit.png";
 const Account = () => {
   return (
     <div>
+      <div className="header-block"></div>
       <Header />
       <div className="container-fluid py3 py-md-5">
         <div className="row mx-0">
