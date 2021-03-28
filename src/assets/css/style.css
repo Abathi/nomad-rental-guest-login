@@ -1,4 +1,9 @@
 .line {
-    border-top: 1px solid gray;
+    border-top: 1px solid #EEEEEE;
     margin-top: 10px;
+}
+
+.blue-link {
+    color: #168EEA;
+    cursor: pointer;
 }
