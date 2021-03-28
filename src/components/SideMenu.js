@@ -1,4 +1,3 @@
-import Button from "../components/Button";
 import user from "../assets/images/user.png";
 import faq from "../assets/images/faq.png";
 import contact from "../assets/images/contact.png";
