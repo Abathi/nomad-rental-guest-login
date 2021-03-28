@@ -8,11 +8,6 @@
   height: 70px;
 }
 
-.line {
-  border-top: 1px solid #eeeeee;
-  margin-top: 10px;
-}
-
 @media (max-width: 768px) {
   .container-fluid {
     padding-right: 10px !important;
