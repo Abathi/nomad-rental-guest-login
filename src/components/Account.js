@@ -36,7 +36,7 @@ const Account = () => {
               <form className="bg-gray p-3">
                 <div className="row mx-0">
                   <div className="form-group col-md-6">
-                    <label for="name">Your Name</label>
+                    <label htmlFor="name">Your Name</label>
                     <input
                       type="text"
                       className="form-control"
@@ -45,7 +45,7 @@ const Account = () => {
                     />
                   </div>
                   <div className="form-group col-md-6">
-                    <label for="email">Email address</label>
+                    <label htmlFor="email">Email address</label>
                     <input
                       type="email"
                       className="form-control"
@@ -54,7 +54,7 @@ const Account = () => {
                     />
                   </div>
                   <div className="form-group col-md-12">
-                    <label for="country">Country</label>
+                    <label htmlFor="country">Country</label>
                   </div>
                   <div className="form-group col-md-6">
                     <select id="country" className="form-control">
@@ -63,7 +63,7 @@ const Account = () => {
                     </select>
                   </div>
                   <div className="form-group col-md-6">
-                    <label className="sr-only" for="mobile">
+                    <label className="sr-only" htmlFor="mobile">
                       Username
                     </label>
                     <div className="input-group mb-2">
@@ -87,7 +87,7 @@ const Account = () => {
                     }}
                   ></div>
                   <div className="form-group col-md-6">
-                    <label for="current-password">Current Password</label>
+                    <label htmlFor="current-password">Current Password</label>
                     <span className="float-right blue-link">Forgot?</span>
                     <input
                       type="password"
@@ -97,7 +97,7 @@ const Account = () => {
                     />
                   </div>
                   <div className="form-group col-md-6">
-                    <label for="new-password">New Password</label>
+                    <label htmlFor="new-password">New Password</label>
                     <input
                       type="password"
                       className="form-control"
