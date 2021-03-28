@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './assets/css/style.css';
 import './assets/css/bootstrap.min.css';
+import './assets/css/fontawesome-all.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
